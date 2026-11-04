@@ -33,6 +33,7 @@ foreach ($p in $pkgs) {
 $env:Path = [Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [Environment]::GetEnvironmentVariable('Path','User')
 $gitStd = 'C:\Program Files\Git\cmd'
 if (-not (Get-Command git -ErrorAction SilentlyContinue) -and (Test-Path "$gitStd\git.exe")) { $env:Path += ";$gitStd" }
+if (-not (Get-Command git -ErrorAction SilentlyContinue)) { die "git still not found after install - close this window, open a NEW PowerShell and run the command again" }
 
 # git identity (shown on every commit; commitlint/semantic-release attribute commits to this)
 $name = (& git config --global user.name) 2>$null
