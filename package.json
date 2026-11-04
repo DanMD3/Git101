@@ -1,0 +1,22 @@
+{
+  "name": "git101",
+  "private": true,
+  "version": "0.0.0-development",
+  "scripts": {
+    "commit": "cz",
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19",
+    "@commitlint/config-conventional": "^19",
+    "@commitlint/cz-commitlint": "^19",
+    "commitizen": "^4",
+    "husky": "^9",
+    "semantic-release": "^24"
+  }
+}
