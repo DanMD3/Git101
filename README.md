@@ -4,14 +4,14 @@ Practice repo for the Git/GitHub crash course (ITPSS). Fork it, break it, ship i
 
 ## 👉 BEFORE THE WORKSHOP: install the tools
 
-**Lazy way (recommended) — one command, does everything below automatically:**
+**Lazy way (recommended) — run the script from the workshop email (attached):**
 
-| OS | Run this |
-|----|----------|
-| **macOS** (Terminal) | `curl -s https://raw.githubusercontent.com/iman-izzat/Git101/main/setup.sh \| bash` |
-| **Windows** (PowerShell) | `iwr https://raw.githubusercontent.com/iman-izzat/Git101/main/setup.ps1 -UseBasicParsing \| iex` |
+| OS | Where | Run |
+|----|-------|-----|
+| **macOS** | save `setup.sh` from the email, open Terminal | `bash ~/Downloads/setup.sh` |
+| **Windows** | save `setup.ps1` from the email, open PowerShell | `powershell -ExecutionPolicy Bypass -File $HOME\Downloads\setup.ps1` |
 
-The script installs Git, Node.js LTS and VS Code, then asks for your name + email once (that's what will appear on your commits).
+(Same scripts live in this repo if you're a collaborator browsing the source.) The script installs Git, Node.js LTS and VS Code, then asks for your name + email once (that's what will appear on your commits).
 
 **Manual way (if you prefer clicking):**
 
