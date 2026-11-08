@@ -4,25 +4,22 @@ Practice repo for the Git/GitHub crash course (ITPSS). Fork it, break it, ship i
 
 ## 👉 BEFORE THE WORKSHOP: install the tools
 
-**Lazy way (recommended) — run the script from the workshop email (attached):**
-
-| OS | Where | Run |
-|----|-------|-----|
-| **macOS** | save `setup.sh` from the email, open Terminal | `bash ~/Downloads/setup.sh` |
-| **Windows** | save `setup.ps1` from the email, open PowerShell | `powershell -ExecutionPolicy Bypass -File $HOME\Downloads\setup.ps1` |
-
-(Same scripts live in this repo if you're a collaborator browsing the source.) The script installs Git, Node.js LTS and VS Code, then asks for your name + email once (that's what will appear on your commits).
-
-**Manual way (if you prefer clicking):**
+Install these four, one by one (next-next-finish, then verify):
 
 | Tool | Why | Link |
 |------|-----|------|
-| Homebrew (Mac only) | the installer the script uses | https://brew.sh |
 | Git | commits, branches, the whole workshop | https://git-scm.com/downloads |
-| Node.js (LTS) | runs `npm run commit` (the polite committer) | https://nodejs.org/en |
+| Node.js (**LTS**) | runs `npm run commit` (the polite committer) | https://nodejs.org/en |
 | VS Code | editor + conflict resolution | https://code.visualstudio.com/download |
+| Homebrew — **Mac only** | package manager IT folks may already have it | https://brew.sh |
 
-Verify in a terminal: `git --version`, `node --version`, `npm --version`.
+Then tell Git who you are (shown on every commit you make in the workshop) — in a terminal:
+```
+git config --global user.name  "Your Name"
+git config --global user.email "your.email@itpss.com.bn"   # same email as your GitHub account
+```
+
+Verify everything: `git --version` · `node --version` · `npm --version` — all three should print numbers.
 
 ## 👉 STILL YOU (browser — no script can do these):
 
