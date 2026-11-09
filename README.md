@@ -47,7 +47,8 @@ Verify everything: `git --version` · `node --version` · `npm --version` — al
 
 Add a line below with your name and one sentence on why you're here. Keep it to one line.
 
-- Iman — teaching Git so AI can write the code in peace.
+- Iman — teaching Git so AI can write the code in peace.\
+- Izzat - aku ganggu
 
 
 - Dan - database admin, want AI to write my SQL reports
